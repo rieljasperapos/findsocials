@@ -12,7 +12,9 @@ const Profile = () => {
             <div className='min-h-screen flex flex-col items-center'>
                 <div className='flex-grow flex flex-col justify-center items-center mt-28 w-full'>
                     <img src={profilePic} alt="myPic" />
-                    <h1 className='mt-8 font-medium text-2xl'>@rieljasper</h1>
+                    <a href='https://rieljasperapos.vercel.app/' target='_blank'>
+                        <h1 className='mt-8 font-medium text-2xl hover:text-blue-400 hover:cursor-pointer'>@rieljasper</h1>
+                    </a>
                     <hr className='w-64 mt-8'></hr>
                     <div className='mt-6'>
                         <Socials icon={instagram} text='Instagram' link='https://www.instagram.com/rieljasper/'/>
@@ -39,7 +41,7 @@ const Socials = ({
     link: string;
 }) => {
     return (
-        <a href={link} target="_blank" rel="noopener noreferrer" className='group flex p-2 mt-24 hover:cursor-pointer hover:scale-105 hover:transition-transform duration-300 ease-in rounded-lg'>
+        <a href={link} className='group flex p-2 mt-24 hover:cursor-pointer hover:scale-105 hover:transition-transform duration-300 ease-in rounded-lg'>
             <img src={icon} className='transition-transform duration-300 group-hover:animate-spin w-6 h-6'></img>
             <p className='ml-4 text-sm'>{text}</p>
         </a>
