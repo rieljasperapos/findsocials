@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       margin: {
-        '100': '100px',
+        '142': '142px',
         '120': '120px',
         '24': '24px',
         '159': '159px',

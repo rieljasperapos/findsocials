@@ -10,7 +10,7 @@ const Profile = () => {
     return (
         <>
             <div className='min-h-screen flex flex-col items-center'>
-                <div className='flex-grow flex flex-col justify-center items-center mt-20 w-full'>
+                <div className='flex-grow flex flex-col justify-center items-center mt-28 w-full'>
                     <img src={profilePic} alt="myPic" />
                     <h1 className='mt-8 font-medium text-2xl'>@rieljasper</h1>
                     <hr className='w-64 mt-8'></hr>
